@@ -10,7 +10,13 @@ body {
   background-color: #fff8f0;
   color: #333;
   line-height: 1.6;
+   overflow: auto; /* Allows scrolling */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
 }
+body::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in WebKit browsers (Chrome, Safari, Edge) */
+}
+/*
 
 /* Navigation */
 nav {
